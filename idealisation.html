@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Idealisation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel = "stylesheet" href="css/frame.css">
+        <link rel = "stylesheet" href="css/idealisation.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    </head>
+
+    <body>
+        <!--page thumbnails-->
+        <div id="page_thumbnails_container"></div>
+
+        <!--page names-->
+        <div id="page_names"></div>
+
+        <!--content-->
+        <div id="content">
+
+            <!--Aliceblue box-->
+            <div id="section_1">
+                <p id="heading"><b>Let's idealise things</b></p>
+            Here we strip away details which are unnecessary to solving the problem at hand.
+            <p id="descript">
+                <ul>
+                    <li>We consider oscillating systems as a mass point connected to a massless string !
+                    </li> <br>
+                    <li>Then we further assume that the medium is of uniform density and details like colour, material particulars, temparture etc of the system are insignificant.</li> 
+                </ul>
+                <b>use the slider to strip away unwanted details and idealise it !!</b>
+            </p>
+            <input type="range" class="slider" min="0" max="1" step="0.01" value="0" oninput="Changer(this.value)">   
+            </div>
+
+            <!--White box-->
+            <div id="section_2">
+                <figure class="static">
+                    <img class="ideal" src="images/swing_ideal.png">
+                    <img  class="real" src="images/rope_swing.png">
+                </figure>
+                <figure class="static">
+                    <img class="ideal" src="images/clock_ideal.png">
+                    <img class="real" src="images/pendulum_clock.svg">
+                </figure>
+                <figure id="animated">
+                    <hr>
+                    <div id="knob"></div>
+                    <img class="ideal" src="images/swinging_pendulum.png">
+                    <img class="real" src="images/swinging_girl.png">
+                </figure>
+            </div>
+
+        </div> 
+
+        <!--navigation-->
+        <span id="navigator"></span>
+        
+        <!--script after loading page-->
+        <script type="text/javascript" src="js/frame.js"></script>
+        <script type="text/javascript" src="js/idealisation.js"></script>
+
+    </body>
+
+</html>

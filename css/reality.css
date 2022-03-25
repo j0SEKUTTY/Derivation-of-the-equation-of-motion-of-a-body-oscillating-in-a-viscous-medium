@@ -1,0 +1,17 @@
+
+.thumbnail:nth-child(1),#page_names >text:nth-child(1) {
+    opacity: 1;
+} 
+
+figure>img{
+
+    height: 40vh;
+    width: auto;
+    margin-top: 10vh;
+    border-radius: 0.5vh;
+}
+figcaption{
+    text-align: center;
+    text-decoration: none ;
+    color: black;
+}

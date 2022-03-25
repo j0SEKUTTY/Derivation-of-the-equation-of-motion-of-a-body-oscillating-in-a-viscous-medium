@@ -1,0 +1,15 @@
+
+.thumbnail:nth-child(3),#page_names >text:nth-child(3) {
+    opacity: 1;
+} 
+
+canvas{
+    margin: auto;
+}
+#hint{
+    background-color:darkturquoise;
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 1vw;
+    font-size:small;
+}

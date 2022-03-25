@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Idealisation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel = "stylesheet" href="css/frame.css">
+        <link rel = "stylesheet" href="css/geometric.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <script src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
+    </head>
+
+    <body>
+        <!--page thumbnails-->
+        <div id="page_thumbnails_container"></div>
+
+        <!--page names-->
+        <div id="page_names"></div>
+
+        <!--content-->
+        <div id="content">
+
+            <!--Aliceblue box-->
+            <div id="section_1">
+                <p id="heading"><b>Now analyse the geometry</b></p>
+                We place the pendulum schematic into a 2D coordinate system
+                <p id="descript">
+                    <ul>
+                        <li>In terms of coordinates, motion of the bob means variation of theta with respect to time
+                        </li> <br>
+                        <li>Intuitively we expect theta to vary sinusoidally with
+                            decreasing amplitude
+                        </li> <br>
+                    </ul>
+                    <div id="hint">Try dragging and dropping the pendulum. <br><br>
+                    observe how each variables change using the controls step by step. (Next page!!) 
+                    </div>
+                </p>
+                  
+            </div>
+
+            <!--White box-->
+            <div id="section_2">
+                
+            </div>
+
+        </div> 
+
+        <!--navigation-->
+        <span id="navigator"></span>
+        
+        <!--script after loading page-->
+        <script type="text/javascript" src="js/frame.js"></script>
+        <script type="text/javascript" src="js/geometric.js"></script>
+
+    </body>
+
+</html>
