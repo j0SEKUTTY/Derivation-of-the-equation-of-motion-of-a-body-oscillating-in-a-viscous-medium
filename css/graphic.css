@@ -1,0 +1,204 @@
+
+:root{
+    --dim1:1;
+    --dim2:1;
+}
+
+body {
+    font-family: Nunito;
+    text-align: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#page_thumbnails_container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 10vh;
+    padding-top: 3vh;
+    margin: auto;
+    
+}
+.thumbnail {
+    background-color:white;
+    width: 10%;
+    height:100% ;
+    border-radius: 3%;
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777; 
+    opacity: 0.2;
+    transition: opacity,-webkit-box-shadow,-moz-box-shadow,box-shadow 500ms ease-out;
+} 
+.thumbnail:hover{
+    -moz-box-shadow: 1px 1px 3px 1px #777777;
+    -webkit-box-shadow: 1px 1px 3px 1px #777777;
+    box-shadow: 1px 1px 3px 1px #777777; 
+    opacity: 1;
+    transition: 500ms ease-out;
+}
+.thumbnail > img {
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    border-radius: 3%;
+}
+#page_names {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    height:fit-content;
+    padding: 2vh 0;
+    margin: auto;
+}
+#page_names >text {
+    width: 10%;
+    display: inline;
+    text-align: center;
+    opacity: 0.2;
+    transform:scale(var(--dim1),var(--dim2));
+} 
+
+  .thumbnail:nth-child(5),#page_names >text:nth-child(5) {
+    opacity: 1;
+} 
+
+  #content{
+    margin:auto;
+    display: grid;
+    width: 90vw;
+    height: 95vh;
+    grid-auto-flow: column;
+    border-top: 1vh solid rgb(120,167,222);
+    border-bottom: 1vh solid rgb(120,167,222);
+    border-radius: 5px;
+    margin: auto;
+  }
+  #section_1{
+    background-color: aliceblue;
+    width:29vw;
+    height: 95vh;
+    padding-left: 1vw;
+    font-size: smaller;
+    border-left: 1px solid lightgray;
+  }
+  #section_2{
+    width: 60vw;
+    height: 95vh;
+    border-right: 1px solid lightgray;
+  }
+  input[type="range"] {
+    display: inline-block;
+    -webkit-appearance: none;
+    background-color: #ccc;
+    width: 13vw;
+    height: 0.5vh;
+    border-radius: 1vh;
+    margin: 0;
+    outline:0;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color:steelblue ;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: .5vh solid #ccc;
+    cursor:pointer;
+    transition: .25s ease-in-out;
+  }​
+    input[type="range"]::-webkit-slider-thumb:hover {
+    background-color:steelblue;
+    border: .5vh solid white;
+  }
+    input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+  }
+  #dropdown{
+  
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 28vw;
+    height: 20vh;
+  }
+  .select {
+    position: relative;
+    min-width: 200px;
+  }
+  .select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098a9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+  .select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+  }
+  .select select:required:invalid {
+    color: #5a667f;
+  }
+  .select select option {
+    color: #223254;
+  }
+  .select select option[value=""][disabled] {
+    display: none;
+  }
+  .select select:focus {
+    outline: none;
+    border-color: #07f;
+    box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+  }
+  .select select:hover + svg {
+    stroke: #07f;
+  }
+  .sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+.nav{
+    width: 20vh;
+    height: auto;
+}
+.nav> img {
+    filter: drop-shadow( 2px 2px 3px rgba(4, 4, 4));
+    height:8vh;
+    width: auto; 
+    margin-right: 1vw;
+}
+.nav>img:hover {
+    filter: drop-shadow( 2px 2px 2px rgb(4, 4, 4));
+}
+
+#left{
+    position:relative;top:25vh;left: -7vw;
+}
+#right{
+    position:relative;top:25vh;left: 7vw;
+}
+  

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel = "stylesheet" href="css/frame.css">
-        <link rel = "stylesheet" href="css/geometric_a.css">
+        <link rel = "stylesheet" href="css/geometric_bc.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -26,21 +26,17 @@
 
             <!--Aliceblue box-->
             <div id="section_1">
-                <p id="heading"><b>Now analyse the geometry</b></p>
-                We place the pendulum schematic into a 2D coordinate system
-                <p id="descript">
-                    <ul>
-                        <li>In terms of coordinates, motion of the bob means variation of theta with respect to time
-                        </li> <br>
-                        <li>Intuitively we expect theta to vary sinusoidally with
-                            decreasing amplitude
-                        </li> <br>
-                    </ul>
-                    <div id="hint">Try dragging and dropping the pendulum. <br><br>
-                    observe how each variables change using the controls step by step. (Next page!!) 
-                    </div>
-                </p>
-                  
+
+                <br><br><br><b><br><br>Identify Forces : </b><br><br>
+                <input type="checkbox" id="grvty" class="switch" onchange="mark(grvty)">
+                <label for="grvty"> gravitational force</label><br>
+                <input type="checkbox" id="boy" class="switch" onchange="mark(boy)">
+                <label for="boy"> buoyant force</label><br>
+                <input type="checkbox" id="vis" class="switch" onchange="mark(vis)">
+                <label for="vis"> viscous drag force</label><br><br><br>
+                <b>Adjust timescale :</b><br>
+                <input type="range" id="slider" min="0" max="1" step="0.01" value="1" oninput="timeChanger(this.value)">
+                <br>
             </div>
 
             <!--White box-->
@@ -55,7 +51,7 @@
         
         <!--script after loading page-->
         <script type="text/javascript" src="js/frame.js"></script>
-        <script type="text/javascript" src="js/geometric_a.js"></script>
+        <script type="text/javascript" src="js/geometric_c.js"></script>
 
     </body>
 
