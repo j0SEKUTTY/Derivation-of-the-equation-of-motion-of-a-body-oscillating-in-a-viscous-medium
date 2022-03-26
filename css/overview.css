@@ -34,4 +34,5 @@ h2 {
 }
 #oright{
     position:absolute;right:0;bottom:0;
+    transform: rotate(180deg);
 }

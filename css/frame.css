@@ -118,6 +118,7 @@ ul{
 }
 #right{
     position:absolute;right:0vw;top:50vh;
+    transform: rotate(180deg);
 }
 
 

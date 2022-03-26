@@ -1,9 +1,9 @@
 
-document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/pendulum_clock.svg"></a><a class="thumbnail" href="idealisation.html"><img  src="images/clock_ideal.png"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geo_thumbnail.png"></a><a class="thumbnail" href="algebra.html"><img  src="images/algebra.png"></a><a class="thumbnail" href="graphic.html"><img  src="images/keemu.JPG"></a>';
+document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/pendulum_clock.webp"></a><a class="thumbnail" href="idealisation.html"><img  src="images/clock_ideal.webp"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geometric.webp"></a><a class="thumbnail" href="algebra.html"><img  src="images/algebra.webp"></a><a class="thumbnail" href="graphic.html"><img  src="images/graphic.webp"></a>';
 
 document.getElementById('page_names').innerHTML ='<text>Reality</text><text>Idealisation</text><text>Geometric</text><text>Algebra</text><text>Graphic</text>'
 
-document.getElementById('navigator').innerHTML='<a id="left" class="nav" ><img src="images/triangle_l.png"></a><a id="right" class="nav"><img src="images/triangle_r.png"></a>'
+document.getElementById('navigator').innerHTML='<a id="left" class="nav" ><img src="images/nav_icon.webp"></a><a id="right" class="nav"><img src="images/nav_icon.webp"></a>'
 
 const wide = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const tall = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
