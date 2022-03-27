@@ -34,73 +34,54 @@
   .slider::-webkit-slider-thumb:active {
       transform: scale(1.2);
   }
-  #section_2 {
-      background-color: rgb(255, 255, 255);
-      border: 1px solid lightgray;
-      display: grid;
-      grid-template-columns: auto;
-      grid-auto-flow: column;
-      overflow-x: scroll;
-      overflow-y: hidden;
-  }
-  .static{
-    width:27vw ;
-    margin: 15% 0% 0% 10%;
-    padding: 0%;
+
+#section_2 {
+    display:block;
+    align-items:center;
+    height: 70vh;
+    border: 1px solid lightgray;
+    position: relative;top: 0;left: 0;
 }
-.static>img{
-    width: 20vw;
-    height: 50vh;
-    object-fit: contain;
-}
-img.real{    
-   position: relative;top:-51vh; 
-    opacity:var(--real);
-}
-img.ideal{
-    opacity:var(--ideal) ;
-}
-#animated{
-    background-color:aliceblue;
-    margin: 0;
-    width: 55vw;
-    padding: 0%;
-   /* height: 70vh; */
-}
-hr{
-    background-color: rgb(73, 73, 73);
+hr {
+    width: 50vw;
     height: 1vh;
-    width: 40vw;
-    margin: 0 auto;    
-}
-#knob{
-    background-color: rgb(44, 44, 44);
-    height: 1vw;
+    background-color: black;
+    margin: 0% auto;
+}  
+#knob {
     width: 3vw;
-    margin: auto;
+    height: 3vh;
+    background-color:#696969;
     border-bottom-left-radius: 50%;
-    border-bottom-right-radius:50% ;
+    border-bottom-right-radius: 50%;
+    margin: 0% auto;
 }
-#animated> img{
-    display: block;
-    width: 17vw;
-    height:50vh;
-    margin:  0 19.8vw ;
+#section_2>img {
+    width: 20vw;
+    height: auto;
+    margin: 0% auto;
     transform-origin: 44% 0% ; 
-    animation: swing 3s ease-in-out infinite;  
+    animation: swing 3s ease-in-out infinite; 
+
 }
-#animated>img.real{
-    filter: blur(0.5px) grayscale();
-}   
+#ideal{
+    opacity: var(--ideal);
+    position: relative;top: 0vh;left: 19vw;
+}
+#real{
+    opacity: var(--real);
+    position: absolute;top: 4vh;left: 19vw;
+    filter: grayscale();
+}
 
   @keyframes swing {
     0% {
-        transform: rotate(1rad);
+        transform: rotate(.75rad);
     }
     50% {
-        transform: rotate(-1rad);
+        transform: rotate(-.75rad);
     }
     100% {
-        transform: rotate(1rad);
+        transform: rotate(.75rad);
     }
 }

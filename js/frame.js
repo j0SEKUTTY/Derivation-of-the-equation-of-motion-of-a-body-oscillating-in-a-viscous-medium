@@ -1,5 +1,5 @@
 
-document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/pendulum_clock.webp"></a><a class="thumbnail" href="idealisation.html"><img  src="images/clock_ideal.webp"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geometric.webp"></a><a class="thumbnail" href="algebra.html"><img  src="images/algebra.webp"></a><a class="thumbnail" href="graphic.html"><img  src="images/graphic.webp"></a>';
+document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/pendulum_clock.webp"></a><a class="thumbnail" href="idealisation.html"><img  src="images/swinging_pendulum.webp"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geometric.webp"></a><a class="thumbnail" href="algebra.html"><img  src="images/algebra.webp"></a><a class="thumbnail" href="graphic.html"><img  src="images/graphic.webp"></a>';
 
 document.getElementById('page_names').innerHTML ='<text>Reality</text><text>Idealisation</text><text>Geometric</text><text>Algebra</text><text>Graphic</text>'
 
