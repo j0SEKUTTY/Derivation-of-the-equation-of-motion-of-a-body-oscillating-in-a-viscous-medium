@@ -18,3 +18,8 @@ function trans(){
     docx.style.setProperty('--dim2',Math.min(1,ht/tall));
  
 }
+
+  window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
+  })
+  

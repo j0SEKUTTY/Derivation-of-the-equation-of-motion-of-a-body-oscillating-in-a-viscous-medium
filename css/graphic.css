@@ -30,6 +30,15 @@ body {
     -o-user-select: none;
     user-select: none;
 }
+
+#logo {
+  position: absolute;
+  top:4%;
+  left:3%;
+  opacity: 0.5;
+  width: 5vw;
+  height: auto;
+}
 #page_thumbnails_container{
     display: flex;
     justify-content: space-evenly;

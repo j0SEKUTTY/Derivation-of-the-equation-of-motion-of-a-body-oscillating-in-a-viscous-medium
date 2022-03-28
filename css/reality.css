@@ -3,10 +3,13 @@
     opacity: 1;
 } 
 
+figure{
+    margin: auto;
+}
 figure>video{
-
     height: 40vh;
-    width: auto;
+    width: 20vw;
+    object-fit: cover;
     margin-top: 10vh;
     border-radius: 0.5vh;
 }
@@ -14,4 +17,6 @@ figcaption{
     text-align: center;
     text-decoration: none ;
     color: black;
+    transform:scale(var(--dim1),var(--dim2));
+    
 }
