@@ -36,5 +36,5 @@ z = 0;
 setIntervalX(function () {
   z += 0.01
   docx.style.setProperty('--loader',z);
-}, 2, 100);
+}, 1, 100);
 
