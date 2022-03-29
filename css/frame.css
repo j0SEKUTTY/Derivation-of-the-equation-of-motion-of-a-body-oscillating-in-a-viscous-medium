@@ -31,7 +31,7 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    opacity: calc(var(--loader)*5);
+    opacity: calc(var(--loader)*10);
 }
 
 #logo {
@@ -65,7 +65,6 @@ body {
     -moz-box-shadow: 0 0 10px #777777;
     -webkit-box-shadow: 0 0 10px #777777;
     box-shadow: 0 0 10px #777777; 
-    opacity: 0.2;
     transition: opacity,-webkit-box-shadow,-moz-box-shadow,box-shadow 500ms ease-out;
 } 
 .thumbnail:hover{
@@ -99,21 +98,22 @@ body {
 #progress {
     display: flex;
     justify-content: flex-start;
-    height: 1.5vh;
-    width: 80vw;
-    margin: auto;
+    height: 1vh;
+    width: 60vw;
+    margin-top: 2vh;
     border-radius: 2vh;
-    background-color:rgba(120, 168, 222, 0.199);
+    background-color:rgba(120, 168, 222, 0.178);
+    position: fixed;top :7vh;left:20vw;
+    z-index: -1;
 }
 #bar {
     width: 0vw;
-    background-color: rgb(120,167,222);
+    background-color:rgb(120,167,222);
 }
 #progress >img {
     height: 3vh;
     width: 1.5vw;
-    position: relative;top:-0.75vh ;left: -0.5vw;
-    z-index: 2;
+    position: relative;top:-1vh ;left: -0.5vw;
 }
 #content {
     display: grid;
@@ -123,7 +123,7 @@ body {
     width: 80vw;
     text-align: left;
     border: 1px  solid lightgray;
-    /*border-top: 1vh solid rgb(120,167,222); */
+    border-top: 1vh solid rgb(120,167,222); 
     border-bottom: 1vh solid rgb(120,167,222);
     border-radius: 5px;
     margin: auto;

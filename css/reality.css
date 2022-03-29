@@ -3,8 +3,7 @@
     opacity: 1;
 } 
 #bar {
-    width: calc(0vw + 10vw*var(--loader));
-    background-color: rgb(120,167,222);
+    width: calc(0vw + 2vw*var(--loader));
 }
 figure{
     margin: auto;

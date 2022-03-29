@@ -18,7 +18,6 @@ function trans(){
     ht = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
     docx.style.setProperty('--dim1',Math.min(1,bt/wide));
     docx.style.setProperty('--dim2',Math.min(1,ht/tall));
- 
 }
 
 
