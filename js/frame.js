@@ -34,7 +34,7 @@ function setIntervalX(callback, delay, repetitions) {
 z = 0;
 
 setIntervalX(function () {
-  z += 0.01
+  z += 0.02
   docx.style.setProperty('--loader',z);
-}, 1, 100);
+}, 1, 50);
 
