@@ -2,7 +2,10 @@
 .thumbnail:nth-child(1),#page_names >text:nth-child(1) {
     opacity: 1;
 } 
-
+#bar {
+    width: calc(0vw + 10vw*var(--loader));
+    background-color: rgb(120,167,222);
+}
 figure{
     margin: auto;
 }

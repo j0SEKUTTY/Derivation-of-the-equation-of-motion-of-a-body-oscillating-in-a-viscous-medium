@@ -2,6 +2,9 @@
 .thumbnail:nth-child(3),#page_names >text:nth-child(3) {
     opacity: 1;
 } 
+#bar {
+    width: calc(25vw + 15vw*var(--loader));
+}
 
 canvas{
     margin: auto;

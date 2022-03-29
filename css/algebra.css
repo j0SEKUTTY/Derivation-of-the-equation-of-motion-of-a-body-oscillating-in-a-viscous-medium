@@ -5,6 +5,10 @@
 .thumbnail:nth-child(4),#page_names >text:nth-child(4) {
     opacity: 1;
 } 
+#bar {
+     width: calc(40vw + 15vw*var(--loader));
+}
+
 canvas{
     margin: auto;
 }

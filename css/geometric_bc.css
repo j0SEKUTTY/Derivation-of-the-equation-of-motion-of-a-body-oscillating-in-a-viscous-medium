@@ -2,7 +2,9 @@
 .thumbnail:nth-child(3),#page_names >text:nth-child(3) {
     opacity: 1;
 } 
-
+#bar {
+  width: 40vw;
+}
 canvas{
     margin: auto;
 }

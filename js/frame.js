@@ -3,6 +3,8 @@ document.getElementById('page_thumbnails_container').innerHTML = '<a class="thum
 
 document.getElementById('page_names').innerHTML ='<text>Reality</text><text>Idealisation</text><text>Geometric</text><text>Algebra</text><text>Graphic</text>'
 
+document.getElementById('progress').innerHTML= '<div id ="bar"></div><img src="images/arrow.webp">'
+
 document.getElementById('navigator').innerHTML='<a id="left" class="nav" ><img src="images/nav_icon.webp"></a><a id="right" class="nav"><img src="images/nav_icon.webp"></a>'
 
 const wide = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -34,7 +36,7 @@ function setIntervalX(callback, delay, repetitions) {
 z = 0;
 
 setIntervalX(function () {
-  z += 0.02
+  z += 0.01
   docx.style.setProperty('--loader',z);
-}, 1, 50);
+}, 1, 100);
 

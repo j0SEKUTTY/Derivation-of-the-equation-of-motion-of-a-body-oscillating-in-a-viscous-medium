@@ -28,6 +28,9 @@ h2 {
     width: 16vw;
     opacity: 1;
 } 
+#progress {
+    visibility: hidden;
+}
 
 #oleft{
     position:absolute;left:0;top:0;
