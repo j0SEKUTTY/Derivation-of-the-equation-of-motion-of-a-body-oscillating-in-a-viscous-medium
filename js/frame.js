@@ -13,14 +13,6 @@ const tall = Math.max(document.documentElement.clientHeight || 0, window.innerHe
 window.addEventListener('resize', trans);
 
 const docx = document.documentElement;
-function orient(wd,tl)
-{
-  if (wd<tl) 
-   { docx.style.setProperty('--angle',90);console.log("hi"); }
-  else 
-   { docx.style.setProperty('--angle',0);}
-}
-orient(wide,tall);
 function trans(){
     bt = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     ht = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
