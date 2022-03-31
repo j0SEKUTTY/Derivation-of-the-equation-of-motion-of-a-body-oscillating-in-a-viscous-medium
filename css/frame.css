@@ -2,6 +2,7 @@
     --dim1:1;
     --dim2:1;
     --loader:0;
+    --angle:0
 }
 
 /* latin-ext */
@@ -32,6 +33,7 @@ body {
     -o-user-select: none;
     user-select: none;
     opacity: calc(var(--loader)*2.5);
+    transform: rotate(calc(1deg*var(--angle)));
 }
 
 #logo {
