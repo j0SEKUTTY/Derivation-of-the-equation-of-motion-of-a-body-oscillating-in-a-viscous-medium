@@ -6,7 +6,7 @@
   width: 25vw;
 }
 canvas{
-    margin: auto;
+    margin:0 auto;
 }
 
 input[type=checkbox] {
@@ -64,3 +64,27 @@ input[type="range"] {
     input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.2);
   }
+
+  #infor {
+    background-color: rgba(255, 68, 0, 0.527);
+    max-width: 40vw;
+    max-height: 20vh;
+    font-size: small;
+    position: absolute;top:75vh;left:44vw;
+    border-radius: 3vh;
+    z-index: 5;
+}
+#infor>text{
+    padding: 1vw;
+}
+button{
+    display: block;
+    cursor:pointer;
+    width: fit-content;
+    border: 0;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 0.5vh;
+    background-color: white;
+}

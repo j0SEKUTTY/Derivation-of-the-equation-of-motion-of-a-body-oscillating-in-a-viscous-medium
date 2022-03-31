@@ -1,6 +1,5 @@
-
-document.getElementById("left").href = "geometric_b.html";
-document.getElementById("right").href = "algebra_b.html";
+document.getElementById("left").href = "algebra.html";
+document.getElementById("right").href = "graphic.html";
 
 // *********************** PENDULUM PART************** //
 

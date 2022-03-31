@@ -40,14 +40,18 @@
             <!--White box-->
             <div id="section_2">
                 <div id="section_21">
-                    <p id="heading"><b>let's do some algebra</b></p>
-                    <p onclick="shw(0)" class="eq">force of  gravity , $ F_{g} = mg $ </p>
-                    <p onclick="shw(1)" class="eq">upward buoyant force , $F_{b} = \rho _{f}Vg $</p>
-                    <p onclick="shw(2)" class="eq">viscous damping force along the tangent , $f^{'} = -av $</p>
-                    <p>For a rotational system Newton's Law gives , $\tau = I\alpha \hskip 3em$ ..eq(1) </p>
-                    <p class="xp" onclick="xplain(0)" >Torque due to $F_{g}$ and $F_{b}$ , $$\tau_{1} = -(mg-\rho _{f}Vg)Lsin\theta$$
-                         $$ = -(\rho_{b}Vg-\rho _{f}Vg)Lsin\theta $$
-                         $$ = -\rho_{b}Vg(1-\frac{\rho _{f}}{\rho _{b}})Lsin\theta $$ </p>
+                    $continuing..$
+                    <br> <br>
+                    <p> which implies $\tau_{1} = -mg_{e}Lsin\theta$ <br>
+                      $\hskip 12em$where, $\hskip 1em g_{e} = g(1-\frac{\rho _{f}}{\rho_{b}})$</p>
+                    <p>Torque due to viscous drag ,$ \tau _{2} = -avL $</p>
+                    <p>Net Torque $\hskip 1 em \tau = \tau _{1} + \tau _{2} = -(mg_{e}Lsin\theta + avL)\hskip 5em$  ..eq(2)  </p>
+                    <p>from (1) and (2) ,
+                        <fieldset class="xp" onclick="xplain(1)">
+                        $$ mL\frac{d^{2}\theta }{dt^{2}}+a\frac{d\theta }{dt} + mg_{e}sin\theta = 0$$
+                        </fieldset>
+                    </p>
+                    <p>is the equation of motion for the pendulum.</p>
                     
                 </div>
                 <div id="section_22">
@@ -77,7 +81,7 @@
         <script> MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}}; </script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         <script type="text/javascript" src="js/frame.js"></script>
-        <script type="text/javascript" src="js/algebra.js"></script>
+        <script type="text/javascript" src="js/algebra_b.js"></script>
 
     </body>
 

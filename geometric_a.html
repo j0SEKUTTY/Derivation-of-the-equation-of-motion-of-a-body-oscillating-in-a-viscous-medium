@@ -34,24 +34,29 @@
             <!--Aliceblue box-->
             <div id="section_1">
                 <p id="heading"><b>Now analyse the geometry</b></p>
-                We place the pendulum schematic into a 2D coordinate system
-                <p id="descript">
-                    <ul>
-                        <li>In terms of coordinates, motion of the bob means variation of theta with respect to time
-                        </li> <br>
-                        <li>Intuitively we expect theta to vary sinusoidally with
-                            decreasing amplitude
-                        </li> <br>
-                    </ul>
-                    <div id="hint">Try dragging and dropping the pendulum. <br><br>
-                    observe how each variables change using the controls step by step. (Next page!!) 
-                    </div>
-                </p>
+
+                <br><b>let's attach some axis:</b> </br>
+                As a first step we place the pendulum schematic into a 2D coordinate system. <br>  
+                <input type="checkbox" id="cord" class="switch" onchange="mark(cord)"><br><br>
+                <span id="item1">
+                <b>Mark Variables:</b>
+                 <br>Now that we have a pendulum in a 2D plane,we can mark some variables. <br><br>
+                <input type="checkbox" id="ankle" class="switch" onchange="mark(ankle)">
+                <label for="ankle"> theta(θ)</label><br>
+                <input type="checkbox" id="legth" class="switch" onchange="mark(legth)"> 
+                <label for="legth"> length of pendulum(l)</label><br>
+                <input type="checkbox" id="amp" class="switch" onchange="mark(amp)">
+                <label for="amp"> amplitude of oscillation(A)</label><br><br>
+                 </span>
+                <b>Adjust timescale :</b><br>
+                <input type="range" id="slider" min="0" max="1" step="0.01" value="1" oninput="timeChanger(this.value)">
                   
             </div>
 
             <!--White box-->
             <div id="section_2">
+                <div id="infor"> 
+                </div>
                 
             </div>
 

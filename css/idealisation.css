@@ -1,6 +1,10 @@
 :root{
     --real:1;
     --ideal:0;
+    --x1:0;
+    --x2:0;
+    --x3:1;
+    --x4:0;
 }
 
 .thumbnail:nth-child(2),#page_names >text:nth-child(2) {
@@ -40,7 +44,8 @@
 #section_2 {
     display:block;
     align-items:center;
-    height: 70vh;
+    height: 75vh;
+    background-color: rgb(220, 230, 255,var(--x3));
     position: relative;top: 0;left: 0;
 }
 
@@ -69,7 +74,18 @@
     position: absolute;top: 2vh;left: 19vw;
     filter: grayscale();
 }
-
+#item1{
+    opacity: var(--x1);
+    transition: 1s ease-in;
+}
+#item2{
+    opacity: var(--x2);
+    transition: 1s ease-in;
+}
+#item3{
+    opacity: var(--x4);
+    transition: 1s ease-in;
+}
   @keyframes swing {
     0% {
         transform: rotate(.75rad);
