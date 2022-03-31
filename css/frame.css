@@ -31,7 +31,7 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    opacity: calc(var(--loader)*10);
+    opacity: calc(var(--loader)*5);
 }
 
 #logo {
