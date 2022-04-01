@@ -87,7 +87,7 @@ input[type="range"] {
     max-width: 40vw;
     max-height: 20vh;
     font-size: small;
-    position: absolute;top:75vh;left:44vw;
+    position: absolute;top:80vh;left:44vw;
     border-radius: 3vh;
     z-index: 5;
 }
