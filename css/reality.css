@@ -16,8 +16,7 @@ figure>video{
     border-radius: 0.5vh;
 }
 figure>img{
-    border: 1px solid grey;
-    background-color: rgb(233, 245, 245);
+    border: 1px solid black;
     height: 40vh;
     width: 30vw;
     object-fit: contain;

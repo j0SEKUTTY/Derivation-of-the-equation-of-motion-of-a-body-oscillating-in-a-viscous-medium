@@ -69,27 +69,28 @@
 #knob {
     width: 3vw;
     height: 3vh;
-    background-color:#696969;
+    background-color:#5b5b5b;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     margin: 0% auto;
 }
-#section_2>img {
-    width: 20vw;
-    height: auto;
+#section_2>img { 
     margin: 0% auto;
     transform-origin: 44% 0% ; 
     animation: swing 3s ease-in-out infinite; 
 
 }
 #ideal{
+    width: 20vw;
+    height: auto;
     opacity: var(--ideal);
     position: relative;top: 0vh;left: 19vw;
 }
 #real{
+    width: 15vw;
+    height: auto;
     opacity: var(--real);
-    position: absolute;top: 2vh;left: 19vw;
-    filter: grayscale();
+    position: absolute;top: 1vh;left: 21vw;
 }
 #item1{
     opacity: var(--x1);
