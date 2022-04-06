@@ -5,7 +5,7 @@
     opacity: 1;
 } 
 #bar {
-    width: calc(15vw + 10vw*var(--loader));
+    width: calc(24.5vw + 10vw*var(--loader));
 }
 
 canvas{

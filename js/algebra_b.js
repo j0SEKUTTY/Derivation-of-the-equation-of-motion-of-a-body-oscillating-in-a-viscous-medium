@@ -1,5 +1,5 @@
 document.getElementById("left").href = "algebra.html";
-document.getElementById("right").href = "graphic.html";
+document.getElementById("right").href = "overview.html";
 
 // *********************** PENDULUM PART************** //
 

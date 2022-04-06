@@ -27,6 +27,10 @@ body {
     -o-user-select: none;
     user-select: none;
 }
+img {
+    display: block;
+    margin: auto;
+}
 p {
     text-align:justify;
     margin:1% 13% 5% 13%;
