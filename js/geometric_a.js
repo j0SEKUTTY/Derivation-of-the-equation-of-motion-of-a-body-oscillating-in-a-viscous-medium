@@ -3,12 +3,6 @@
 document.getElementById("left").href = "idealisation.html";
 document.getElementById("right").href = "geometric_b.html";
 
-const el = document.getElementById("infor");
-function remov() 
-{
-  
-  el.innerHTML="";
-}
 
 // *********************** PENDULUM PART************** //
 
@@ -27,7 +21,6 @@ dt = 0.01;
 function timeChanger(value)
 {
     dt =value*0.01;
-    hist = [];
 }
 
 let x;
@@ -39,7 +32,6 @@ ankle=["ankle",0]; legth=["legth",0]; amp=["amp",0];
 x1 =0;
 textop = 255;
 
-info = "";
 
 function mark(s)
 {   
@@ -50,15 +42,11 @@ function mark(s)
        x1 = 1-x1; 
       }
     docx.style.setProperty('--x1',x1);
-    if (s[0]=="ankle" && ankle[1]==255) { el.innerHTML = '<text>angle is measured from the horizontel axis in anticlockwise direction. Our intution suggests that theta varies in a sinusoidal fashion. Look at the graph above..</text><button onclick="remov()">ok</button>'}
-    if (s[0]=="legth" && legth[1]==255) { el.innerHTML = '<text> length of the simple pendulum is taken as the distance between point of suspension and the center of mass of the bob.</text><button onclick="remov()">ok</button>'}
-    if (s[0]=="amp" && s[1]==255) { el.innerHTML = '<text>The amplitude of a pendulum is one-half the distance a bob traverses in moving from one side to the other. Or in other words,maximum displacement of the bob from its mean position.</text><button onclick="remov()">ok</button>'}
 }
 
 
 factor =300 ;
 
-  hist = [];
 function draw()
 {
   /***Create a canvas aka setup***/
@@ -69,7 +57,7 @@ function draw()
   var canvas =createCanvas(p,q);
   canvas.parent('section_2');
   frameRate(50);
-  o = createVector(p/2,0);
+  o = createVector(p/2,30);
 
   /***Usual Draw function***/
   background(255,255,255);
@@ -79,8 +67,6 @@ function draw()
   w += acc*dt;
   theta += w*dt;
  
-  hist.push(theta);
-  hist=hist.splice(-p*0.02/dt);
 
   x = factor*length*sin(theta) + o.x;
   y = factor*length*cos(theta) + o.y;
@@ -93,23 +79,12 @@ function draw()
   ellipse(x,y,factor*2*bob_r);
   noStroke();
 
-
-//bottom graph text
-  fill(0,0,0,ankle[1]);
-  textSize(10);
-  text('  90 deg',0,q*0.8 - 62.83);
-  text(' -90 deg',0,q*0.8 + 62.83);
-
-// bottom graph baseline(gray)
-  drawingContext.setLineDash([5, 5]);
-  stroke(127,127,127,ankle[1]);
-  line(0,q*0.8,p,q*0.8);
-  
+ 
 //coordinate (gray)
-  stroke(190,190,190,cord[1]);
+  stroke(10,10,10,cord[1]);
   drawingContext.setLineDash([2,2]);
-  line(o.x,o.y,o.x,length*factor+50);
-  line(o.x-(length*factor+50),0,o.x+length*factor+50,0);
+  line(o.x,0,o.x,length*factor+50);
+  line(o.x-(length*factor+50),30,o.x+length*factor+50,30);
   drawingContext.setLineDash([0]);
 
 // angle(green)
@@ -161,22 +136,17 @@ function draw()
     text('A',o.x+10,length*factor+10);   
   }
   drawingContext.setLineDash([0]);
-
-//graph sin wave(green)
-  noFill();
-  beginShape();
-  stroke(150,250,150,ankle[1]);
-  for (i =0;i<hist.length;i++)
-  {
-      vertex(i*dt/0.02,-hist[i]*40 + q*0.8)
-  }
-  endShape();
   
-//useful tips
+//useful text
 noStroke();
 textSize(13);
 fill(100,100,100,textop);
 text("drag and drop the bob !!",10,15);
+fill(10,10,10,cord[1]);
+text("x'",o.x+length*factor+55,30)
+text("x",o.x-(length*factor+60),30)
+text("y",o.x+5,10)
+text("y'",o.x+5,length*factor+60)
 
 }
 

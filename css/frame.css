@@ -118,7 +118,7 @@ body {
 #content {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
     height: 75vh;
     width: 80vw;
     text-align: left;

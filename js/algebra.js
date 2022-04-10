@@ -51,6 +51,7 @@ function draw()
 
   /***Usual Draw function***/  
   background(240,248,255);
+ // background(255,255,255);
   x = 75 + o.x;
   y = 150 + o.y;
   theta = atan(2);

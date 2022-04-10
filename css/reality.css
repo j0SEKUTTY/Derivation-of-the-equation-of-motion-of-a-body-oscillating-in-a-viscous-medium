@@ -15,14 +15,6 @@ figure>video{
     margin-top: 8vh;
     border-radius: 0.5vh;
 }
-figure>img{
-    border: 1px solid black;
-    height: 40vh;
-    width: 30vw;
-    object-fit: contain;
-    margin-top: 8vh;
-    border-radius: 0.5vh;
-}
 figcaption{
     text-align: center;
     text-decoration: none ;

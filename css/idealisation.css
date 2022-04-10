@@ -84,19 +84,19 @@
     width: 20vw;
     height: auto;
     opacity: var(--ideal);
-    position: relative;top: 0vh;left: 19vw;
+    position: relative;top: 0vh;left: 17vw;
 }
 #real{
     width: 15vw;
     height: auto;
     opacity: var(--real);
-    position: absolute;top: 1vh;left: 21vw;
+    position: absolute;top: 1vh;left: 19vw;
 }
 #item1{
     opacity: var(--x1);
     transition: 1s ease-in;
 }
-#item2{
+.item2{
     opacity: var(--x2);
     transition: 1s ease-in;
 }

@@ -7,25 +7,19 @@ const el = document.getElementById("infor");
 
 function remov() 
 {
-  
   el.innerHTML="";
+
 }
 count_g = true; count_b = true; count_v = true;
-
 //notes on gravity
 function gnote()
 {
   count_g = !count_g;
   if (count_g==false) 
   {
-  el.innerHTML = '<text>The trivial and easly understood force acting on the bob is gravity itself. Gravitational force is directed towards the center of earth.</text><button onclick="gnote1()">ok</button>';
+  el.innerHTML = '<text>As we know ,there is gravitational force that is directed downwards.</text><button onclick="remov()">ok</button>';
   }
   else { remov();}
-}
-function gnote1()
-{
-  el.innerHTML = '<text>So the direction is downwards and the magnitude is the weight of bob.<br> Hence <b>F<sub>g</sub> = mg</b><br>We can represent this force by a downward arrow in the above sketch. </text><button onclick="remov()">got it</button>';
-  gvt_T = "mg";
 }
 
 //notes on buoyancy
@@ -34,18 +28,9 @@ function bnote()
   count_b = !count_b;
   if (count_b==false) 
   {
-  el.innerHTML = '<text>Now we want to investigate the buoyant force <b>F<sub>b</sub></b>. It is the net upward force on any object immersed in a fluid. From Archimedes principle, the buoyant force on a body is equal to the weight of fluid displaced by that body.</text><button onclick="bnote1()">ok</button>';
+  el.innerHTML = '<text>Since the bob is oscillating in a medium, there is a buoyant force directed upwards</text><button onclick="remov()">ok</button>';
   }
   else { remov();}
-}
-function bnote1()
-{
-  el.innerHTML = '<text>So if <b> ρ </b>is the density of fluid and <b> V </b> is the volume of the bob, <b> ρV </b> is the mass of fluid displaced and <b> ρVg </b> is the corresponding weight.</text><button onclick="bnote2()">ok</button>';
-}
-function bnote2()
-{
-  el.innerHTML = '<text>We will represent the buoyant force by an upward arrow in the sketch.The magnitude is given by <b>F<sub>b</sub> = ρVg </b></text><button onclick="remov()">got it</button>';
-  boy_T = "ρVg";
 }
 
 //notes on viscous drag
@@ -54,24 +39,10 @@ function vnote()
   count_v = !count_v;
   if (count_v==false) 
   { 
-  el.innerHTML = '<text>An object moving through a fluid experiences a frictional force. This fluid friction is called the viscous drag force.</text><button onclick="vnote1()">ok</button>';
+    el.innerHTML = '<text>The medium also generates a damping. This viscous damping force opposes the motion and is directed opposite to the velocity </text><button onclick="remov()">ok</button>';
   }
   else { remov();}
 }
-function vnote1()
-{
-  el.innerHTML = '<text>Viscous drag force on an object depends upon factors like surface area of the object itself,density of fluid,velocity of motion etc. The direction of viscous force is such that it always opposes the motion. </text><button onclick="vnote2()">ok</button>';
-}
-function vnote2()
-{
-  el.innerHTML = '<text>In a simpler picture we can say that viscous drag force is preportional to velocity,<b>v</b>. All other factors can be composed into a constant <b>a</b> .</text><button onclick="vnote3()">ok</button>';
-}
-function vnote3()
-{
-  el.innerHTML = '<text>Then we have <b> f = -av </b>. The negative sign indicates that viscous force always opposes motion. Increse the density using the slider so that viscous drag will have a non-zero value ! Viscousity also causes the system to damp. Then you can drag and drop the bob anytime!!  </text><button onclick="remov()">got it</button>';
-  vis_T = "-av";
-}
-
 
 // ************** PENDULUM PART************** //
 
