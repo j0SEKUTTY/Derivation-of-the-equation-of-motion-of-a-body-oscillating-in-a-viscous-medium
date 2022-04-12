@@ -2,7 +2,7 @@
 document.getElementById("left").href = "algebra_b.html";
 document.getElementById("right").href = "overview.html";
 
-
+alert("this page is under construction");
 // *********************** PENDULUM PART************** //
 // volume of bob = 1
 length = 1;
