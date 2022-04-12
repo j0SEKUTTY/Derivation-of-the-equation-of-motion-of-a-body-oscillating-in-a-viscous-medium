@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
-    <link rel = "stylesheet" href="css/graphic.css">
+    <link rel = "stylesheet" href="css/solution.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script> MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}}; </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sketch.js/1.0/sketch.min.js" integrity="sha512-kSEyW+qGJr8nB9W0xap8JTmchLnDdjAh5OBrjWQmWbfjRKRNb1goxSWmJbwFN6Gnf+ruF1fmvQhVwYPt/0hKqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,6 +34,14 @@
 
         <!--Aliceblue box-->
         <div id="section_1">
+            <p id="heading"><b>Solving the equation <br> </b></p>
+            <p>
+                For small angle oscillations, equation of motion reduces to:$$ mL\frac{d^{2}\theta }{dt^{2}}+a\frac{d\theta }{dt} + mg_{e}\theta = 0$$
+                This is of the general form y" + ay' + by = 0 whic can be solved using tools like wolframAlpha. Copy and paste the equation in below widget .
+                <script type="text/javascript" id="WolframAlphaScript6cfe12bd095511ebe0b4ba2b589290ee" src="//www.wolframalpha.com/widget/widget.jsp?id=6cfe12bd095511ebe0b4ba2b589290ee"></script>
+            </p>
+
+            <div id="gearbox">
             <br><br>length :
             <input type="range" class="range" min="0.1" max="1.5" step="0.01" value="1" oninput="lengthChanger(this.value)"> <span id="lc">1</span>m
             <br><br>angle :
@@ -40,30 +52,20 @@
             <input type="range" class="range" min="1" max="100" step="1" value="50" oninput="massChanger(this.value)"> <span id="mc">50</span>kg
             <br><br>density of medium :
             <input type="range" class="range" min="0" max="5" step="0.01" value="0" oninput="densityChanger(this.value)"> <span id="dc">0</span>kg/m<sup>3</sup>
-            <div id="dropdown">
-                    <select id="slct" class= select required="required">
-                      <option value="" disabled="disabled" selected="selected">Select option</option>
-                      <option value="#">One</option>
-                      <option value="#">Two</option>
-                      <option value="#">Three</option>
-                      <option value="#">Four</option>
-                      <option value="#">Five</option>
-                      <option value="#">Six</option>
-                      <option value="#">Seven</option>
-                    </select>
-            </div>   
-
-            <!--navigation-->
-            <span id="navigator"></span>
-
+            </div>
+            
+            
         </div>
 
         <!--White box/canvas-->
         <div id="section_2"> </div>
     </div>
+
+    <!--navigation-->
+    <span id="navigator"></span>
        
     <!--script after loading page-->
     <script type="text/javascript" src="js/frame.js"></script>
-    <script type="text/javascript" src="js/graphic.js"></script>
+    <script type="text/javascript" src="js/solution.js"></script>
 </body>
 </html>

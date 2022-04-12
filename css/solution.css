@@ -23,13 +23,13 @@
 
 body {
     font-family: Nunito;
-    text-align: center;
-    -webkit-user-select: none;
+    /*-webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+    -o-user-select:none;
+    user-select:none;*/
+    opacity: calc(var(--loader)*2.5);
 }
 #logo {
   position: absolute;
@@ -108,7 +108,7 @@ body {
   z-index: -10;
 }
 #bar {
-  width: calc(44.5vw + 10vw*var(--loader));
+  width: 52vw;
   background-color: rgb(120,167,222);
 }
 #progress >img {
@@ -135,11 +135,13 @@ body {
     font-size: smaller;
     border-left: 1px solid lightgray;
   }
-  #section_2{
-    width: 60vw;
-    height: 95vh;
-    border-right: 1px solid lightgray;
-  }
+
+#heading{
+    text-align: left;
+    font-size: medium;
+    padding-bottom: 1vh;
+    border-bottom: 0.1vh dashed rgba(0, 0, 0, 0.623);
+}
   input[type="range"] {
     display: inline-block;
     -webkit-appearance: none;
@@ -184,70 +186,13 @@ body {
     input[type="range"]::-moz-range-thumb:active {
     transform: scale(1.2);
   }
-  #dropdown{
-  
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 28vw;
-    height: 20vh;
-  }
-  .select {
-    position: relative;
-    min-width: 200px;
-  }
-  .select svg {
-    position: absolute;
-    right: 12px;
-    top: calc(50% - 3px);
-    width: 10px;
-    height: 6px;
-    stroke-width: 2px;
-    stroke: #9098a9;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    pointer-events: none;
-  }
-  .select select {
-    -webkit-appearance: none;
-    padding: 7px 40px 7px 12px;
-    width: 100%;
-    border: 1px solid #e8eaed;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0 1px 3px -2px #9098a9;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
-    transition: all 150ms ease;
-  }
-  .select select:required:invalid {
-    color: #5a667f;
-  }
-  .select select option {
-    color: #223254;
-  }
-  .select select option[value=""][disabled] {
-    display: none;
-  }
-  .select select:focus {
-    outline: none;
-    border-color: #07f;
-    box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
-  }
-  .select select:hover + svg {
-    stroke: #07f;
-  }
-  .sprites {
-    position: absolute;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-    user-select: none;
+  #section_2{
+    width: 60vw;
+    height: 95vh;
+    border-right: 1px solid lightgray;
   }
 
-.nav{
+  .nav{
     width: 20vh;
     height: auto;
 }
@@ -255,18 +200,17 @@ body {
     filter: drop-shadow( 2px 2px 3px rgba(4, 4, 4));
     height:8vh;
     width: auto; 
-    margin-right: 1vw;
+    padding: 0vw;
 }
 .nav>img:hover {
     filter: drop-shadow( 2px 2px 2px rgb(4, 4, 4));
 }
 
 #left{
-    position:absolute;top:105vh;left: 5vw;
-
+    position:fixed;left:0vw;top:55vh;
 }
 #right{
-    position:absolute;top:105vh;left: 25vw;
+    position:fixed;right:0vw;top:55vh;
     transform: rotate(180deg);
 }
-  
+

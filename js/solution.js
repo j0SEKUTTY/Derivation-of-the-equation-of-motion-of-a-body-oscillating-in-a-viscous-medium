@@ -1,5 +1,5 @@
 
-document.getElementById("left").href = "algebra.html";
+document.getElementById("left").href = "algebra_b.html";
 document.getElementById("right").href = "overview.html";
 
 
@@ -81,13 +81,14 @@ function draw()
   x = factor*length*sin(theta) + o.x;
   y = factor*length*cos(theta) + o.y;
   
+  stroke(100,100,100);
   line(o.x,o.y,x,y);
-  fill(100,100,130)
+  fill(180,180,200)
   ellipse(x,y,factor*2*bob_r);
 
   hist.push(theta);
   hist=hist.splice(-p*2);
-
+  noStroke();
   t += dt;
   text(round(t*100)/100+'s',20,20);
 
