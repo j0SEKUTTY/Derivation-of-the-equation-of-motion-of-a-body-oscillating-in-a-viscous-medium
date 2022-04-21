@@ -1,4 +1,7 @@
-
+:root{
+    --dimX:1;
+    --dimY:1;
+}
 /* latin-ext */
 @font-face {
     font-family: 'Nunito';
@@ -26,9 +29,12 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    transform: scaleX(dimX);
+    transform: scaleY(dimY);
 }
 img {
     display: block;
+    width: 80px;
     margin: auto;
 }
 p {
