@@ -13,22 +13,22 @@ canvas{
     margin: auto;
 }
 #content{
-    font-size: smaller;
+    grid-template-columns: 70% 30%;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
 }
 #section_1{
     border: 0;
-    overflow:hidden;
+    overflow-y:scroll;
 }
 #section_2 {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 60% 40%;
     background-color: white;
+    font-size: 80%;
     border: 0;
-    overflow-x: hidden;
-    
+    padding-left: 2vw; 
+}
+#heading{
+    width: 30%;
 }
 .eq{ 
     background-color:rgba(63, 231, 231, 0.411);
@@ -39,23 +39,20 @@ canvas{
 .xp{ 
     background-color:rgba(63, 231, 231, 0.411);
     border-radius: 1vh;
-    padding: 2vh;
+    padding: 2vh ;
+    margin: auto;
+    width: 30vw;
+    height: fit-content;
     
 }
-#section_21{
-    background-color: aliceblue;
-    padding-right: 1vw;
-    overflow-y: scroll; 
-}
-#section_22{
-    padding: 2vw ;
-}
 #exp0{
+    margin: auto;
     padding-top: 7vw;
     opacity: var(--exp0);
     position: fixed;
 }
 #exp1{
+    margin: auto;
     padding-top: 7vw;
     opacity: var(--exp1);
     position: fixed;

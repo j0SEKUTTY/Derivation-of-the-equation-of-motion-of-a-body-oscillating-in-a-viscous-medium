@@ -39,9 +39,21 @@ function vnote()
   count_v = !count_v;
   if (count_v==false) 
   { 
+    z = 0;
+    setIntervalX(function () {
+    z += 0.02
+    document.getElementById("dnct").value = 2.5*z;}, 1, 50);
+    densityChanger(2.5);
     el.innerHTML = '<text>The medium also generates a damping. This viscous damping force opposes the motion and is directed opposite to the velocity </text><button onclick="remov()">ok</button>';
   }
-  else { remov();}
+  else { 
+    remov();
+    z = 1;
+    setIntervalX(function () {
+    z -= 0.02;
+    document.getElementById("dnct").value = 2.5*z;}, 1, 50);
+    densityChanger(0);
+  }
 }
 
 // ************** PENDULUM PART************** //
@@ -120,12 +132,20 @@ function draw()
   y = factor*length*cos(theta) + o.y;
 
 //string and bob(darkblue)
+  fill(0,0,0);
+  ellipse(o.x,o.y,10,10);
+
   stroke(100,100,100);
   line(o.x,o.y,x,y);
   fill(180,180,200); 
   ellipse(x,y,factor*2*bob_r);
   noStroke();
 
+  //coordinate (gray)
+  stroke(10,10,10);
+  drawingContext.setLineDash([2,2]);
+  line(o.x-(length*factor+50),0,o.x+length*factor+50,0);
+  drawingContext.setLineDash([0]);
 
   v1 = createVector(x,y);
 //Gravity(red)
@@ -141,7 +161,7 @@ function draw()
   drawArrow(v1,v2,boy_T);
 
 //vis(green) 
-  v2 = createVector(x-w*c*cos(theta),y+w*c*sin(theta));
+  v2 = createVector(x-w*c*cos(theta)*1.5,y+w*c*sin(theta)*1.5);
   stroke (0,150,0,vis[1]);
   fill(0,150,0,vis[1])
   drawArrow(v1,v2,vis_T);

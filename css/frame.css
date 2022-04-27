@@ -36,16 +36,16 @@ body {
 
 #logo {
     position: absolute;
-    top:3%;
-    left:3%;
+    top:3vh;
+    left:3vw;
     opacity: 0.5;
     width: 5vw;
-    height: 5vw;
+    height: auto;
     border-radius: 50%;
 }
 #logo >img {
     width: 5vw;
-    height: 5vw;
+    height: auto;
     border-radius: 50%;
 }
 #page_thumbnails_container{
@@ -89,7 +89,7 @@ body {
     margin: auto;
 }
 #page_names >text {
-    width: 10%;
+    width: 10vw;
     display: inline;
     text-align: center;
     opacity: 0.2;
@@ -103,7 +103,7 @@ body {
     margin-top: 2vh;
     border-radius: 2vh;
     background-color:rgba(120, 168, 222, 0.178);
-    position: fixed;top :6vh;left:20vw;
+    position: absolute;top :6vh;left:20vw;
     z-index: -1;
 }
 #bar {
@@ -119,8 +119,8 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 35% 65%;
-    height: 75vh;
     width: 80vw;
+    height: 75vh;
     text-align: left;
     border: 1px  solid lightgray;
     border-top: 1vh solid rgb(120,167,222); 
@@ -130,12 +130,13 @@ body {
 }
 #section_1 {
     background-color:aliceblue;
-    font-size: small;
+    font-size:calc(0.4vw + 1.6vh);
     padding: 1vw;
     overflow-y :scroll;
 }
 #heading{
-    font-size: medium;
+    font-size:calc(0.5vw + 1.7vh);
+    margin-top: 0;
     padding-bottom: 1vh;
     border-bottom: 0.1vh dashed rgba(0, 0, 0, 0.623);
 }
@@ -170,5 +171,4 @@ ul{
     position:absolute;right:0vw;top:50vh;
     transform: rotate(180deg);
 }
-
 

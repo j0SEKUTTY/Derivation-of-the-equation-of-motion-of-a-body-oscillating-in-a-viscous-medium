@@ -1,7 +1,4 @@
-:root{
-    --dimX:1;
-    --dimY:1;
-}
+
 /* latin-ext */
 @font-face {
     font-family: 'Nunito';
@@ -29,38 +26,55 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    transform: scaleX(dimX);
-    transform: scaleY(dimY);
+    padding-top: 1vh;
+}
+br{
+    height: 3.5vh;
 }
 img {
     display: block;
-    width: 80px;
+    height: 14vmin;
+    width: auto;
     margin: auto;
 }
 p {
     text-align:justify;
-    margin:1% 13% 5% 13%;
+    font-size: 2.75vmin;
+    width: 74.45vw;
+    height: fit-content;
+    margin:1vh 13vw 10vh 13vw;
+}
+h1{
+    font-size: 5.5vmin;
+    height: fit-content;
+}
+h3{
+    font-size: 3.5vmin;
+    height: fit-content;
 }
 div {
+    font-size: 2.5vmin;
+    height: 14vh;
     color: gray;
-    margin-top: 3%;
-    font-size: .9em;
+    margin-top: 8vh;
+    font-size:fit-content;
 }
 #hbcse {
     font-weight: bold;
-    font-size:larger;
+    font-size:3.25vmin;
     color:rgb(145, 144, 144);
 }
 #tifr {
     font-weight:regular;
-    font-size:small;
+    font-size:2.25vmin;
     color:rgb(145, 144, 144);
 }
 #link_1 {
+    font-size: 2.75vh;
     color:white;
-    padding:.5em 2em .5em 2em;
+    padding:1.25vh 2.5vw;
     background-color: black;
-    border-radius: .3em;
+    border-radius: 1vh;
     text-decoration:none;
     filter: drop-shadow( 2px 2px 3px rgba(4, 4, 4));
     opacity: 0.8;

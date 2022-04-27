@@ -6,7 +6,8 @@
   width: 34.5vw;
 }
 canvas{
-    margin:0 auto;
+    margin:auto;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -83,7 +84,7 @@ input[type="range"] {
   }
 
   #infor {
-    background-color: rgba(255, 68, 0, 0.527);
+    background-color: aliceblue;
     max-width: 40vw;
     max-height: 20vh;
     font-size: small;

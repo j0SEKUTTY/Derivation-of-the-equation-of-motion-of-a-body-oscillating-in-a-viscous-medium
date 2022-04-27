@@ -33,36 +33,28 @@
 
             <!--Aliceblue box-->
             <div id="section_1">
-            <i>(click on coloured equations to highlight the term in figure)</i>
+                <p id="heading"><b>Algebraic Stage </b></p>
+                    <b>Here let us figure out the expressions for the different forces acting on the bob.</b><br><br>
+                    As we know, the gravitational force,<br>
+                    <text onclick="shw(0)" class="eq"> $ F_{g} = mg $ </text>
+                    <br><br>
+                    Buoyant force is equal to the weight of displaced fluid/medium. Implies,
+                    <br>
+                    <text onclick="shw(1)" class="eq">  $F_{b} = \rho _{f}Vg $</text>
+                    $\hskip 2em$ where  : $\rho _{f}$ - density of medium , $V$ - volume of bob.
+                    <br><br>
+                    The viscous damping force is proportional to the speed $v$ and opposes the motion.<br>
+                    <text onclick="shw(2)" class="eq"> $ i.e. f' \propto -v,\Rightarrow f^{'} = -av $
+                    </text>  $\hskip 2em$where : $a$ - viscous coefficient.
+                    <br><br>
+                    Now we insert the details of the system into a general equation ,
+                    <text class="eq" onclick="xplain(2)"> $\tau = I\alpha \hskip 15em$ ..eq(1) </text>
+    
                   
             </div>
 
-            <!--White box-->
-            <div id="section_2">
-                <div id="section_21">
-                    <p id="heading"><b>Algebraic Stage <br> </b></p>
-                    Here let us figure out the expressions for the different forces acting on the bob.<br><br>
-                    As we know, the gravitational force
-                    <p onclick="shw(0)" class="eq"> $ F_{g} = mg $ </p>
-                    <br>
-                    Buoyant force is equal to the weight of displaced fluid/medium. Implies,
-                    <p onclick="shw(1)" class="eq">  $F_{b} = \rho _{f}Vg $<br></p>
-                    where : $\rho _{f}$ - density of medium , $V$ - volume of bob
-                    
-                    
-                </div>
-                <div id="section_22">
-                    <br><br><br>
-                    The viscous damping force is proportional to the speed $v$ and opposes the motion.<br><br>
-                    $ i.e. f' \propto -v,\Rightarrow  $
-                    <p onclick="shw(2)" class="eq">  $ f^{'} = -av $
-                    <br></p>where $a$ is the viscous coefficient
-                    <br><br>
-                    <p>Now we insert the details of the system into a general equation ,
-                        </p><p class="eq" onclick="xplain(2)"> $\tau = I\alpha \hskip 15em$ ..eq(1) </p>
-    
-                    </div>
-                </div>
+            <!--white box-->
+            <div id="section_2">      
             </div>
 
         </div> 

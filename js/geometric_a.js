@@ -71,8 +71,10 @@ function draw()
   x = factor*length*sin(theta) + o.x;
   y = factor*length*cos(theta) + o.y;
 
-
 //string and bob(darkblue)
+  fill(0,0,0);
+  ellipse(o.x,o.y,5,5);
+  
   stroke(100,100,100);
   line(o.x,o.y,x,y);
   fill(180,180,200); 

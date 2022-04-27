@@ -32,18 +32,17 @@
             <!--Aliceblue box-->
             <div id="section_1">
               
-                <p id="heading"><b>Geometric Stage</b></p>
+                <p id="heading"><b>Identifying the casual factors</b></p>
                  Since we are interested in the motion of pendulum bob, the focus of our analysis is the mass point.<br><br>
                  We identify the casual factors or forces affecting the motion of the mass point<br><br>
                 <input type="checkbox" id="grvty" class="switch" onchange="mark(grvty),gnote()">
-                <label for="grvty"> gravitational force</label><br>
+                <label for="grvty"> Gravitational force</label><br>
                 <input type="checkbox" id="boy" class="switch" onchange="mark(boy),bnote()">
-                <label for="boy"> buoyant force</label><br>
+                <label for="boy"> Buoyant force</label><br>
                 <input type="checkbox" id="vis" class="switch" onchange="mark(vis),vnote()">
-                <label for="vis"> viscous drag force</label><br><br>
-                 density of medium: <br>
-                <br><input type="range" class="range" min="0" max="5" step="0.01" value="0" oninput="densityChanger(this.value)">
-                <br>
+                <label for="vis"> Viscous drag force</label><br><br>
+                 Density of medium:
+                <br><br><input type="range" class="range" id="dnct" min="0" max="5" step="0.01" value="0" oninput="densityChanger(this.value)">
                 <br><br><b>Adjust timescale :</b><br>
                 <input type="range" id="slider" min="0" max="1" step="0.01" value="1" oninput="timeChanger(this.value)">
                 <br>

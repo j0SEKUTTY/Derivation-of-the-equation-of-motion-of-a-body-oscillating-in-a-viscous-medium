@@ -3,7 +3,7 @@ h2 {
     transform:scale(var(--dim1),var(--dim2));
 }
 #page_thumbnails_container{
-    height: 25vh;
+    height: 11vw;
     padding-top: 0;
     padding-bottom: 3vh;
     transform: rotate(15deg);

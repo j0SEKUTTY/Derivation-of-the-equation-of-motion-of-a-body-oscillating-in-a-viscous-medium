@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <title>Algebra</title>
@@ -33,43 +33,41 @@
 
             <!--Aliceblue box-->
             <div id="section_1">
-
-                  
+            <!--
+                <p id="heading"><b>Algebraic Stage <br> </b></p>
+            -->
+                <p class="xp" onclick="xplain(0)" >Torque due to $F_{g}$ and $F_{b}$ , $$\tau_{1} = -(mg-\rho _{f}Vg)Lsin\theta$$
+                    $$ = -(\rho_{b}Vg-\rho _{f}Vg)Lsin\theta $$
+                    $$ = -\rho_{b}Vg(1-\frac{\rho _{f}}{\rho _{b}})Lsin\theta $$ </p>
+               
+                <p>Torque due to f' ,$ \tau _{2} = -avL $</p>
+                <p>Net Torque $\hskip 1 em \tau = \tau _{1} + \tau _{2} = -(mg_{e}Lsin\theta + avL)\hskip 10em$  ..eq(2)  </p>
+                <p>Inserting (2)  into the equation $\tau = I\alpha$ ,
+                    <fieldset class="xp" onclick="xplain(1)">
+                    $$ mL\frac{d^{2}\theta }{dt^{2}}+a\frac{d\theta }{dt} + mg_{e}sin\theta = 0$$
+                    </fieldset>
+                </p>
+                <p>is the equation of motion for the pendulum.</p>
+   
             </div>
 
             <!--White box-->
-            <div id="section_2">
-                <div id="section_21">
-                    $continuing..$
-                    <p class="xp" onclick="xplain(0)" >Torque due to $F_{g}$ and $F_{b}$ , $$\tau_{1} = -(mg-\rho _{f}Vg)Lsin\theta$$
-                        $$ = -(\rho_{b}Vg-\rho _{f}Vg)Lsin\theta $$
-                        $$ = -\rho_{b}Vg(1-\frac{\rho _{f}}{\rho _{b}})Lsin\theta $$ </p>
-                   
-                    <p>Torque due to f' ,$ \tau _{2} = -avL $</p>
-                    <p>Net Torque $\hskip 1 em \tau = \tau _{1} + \tau _{2} = -(mg_{e}Lsin\theta + avL)\hskip 2em$  ..eq(2)  </p>
-                    <p>from (1) and (2) ,
-                        <fieldset class="xp" onclick="xplain(1)">
-                        $$ mL\frac{d^{2}\theta }{dt^{2}}+a\frac{d\theta }{dt} + mg_{e}sin\theta = 0$$
-                        </fieldset>
-                    </p>
-                    <p>is the equation of motion for the pendulum.</p>
-                    
-                </div>
-                <div id="section_22">
-                    <i>click on coloured equations for hints</i>
+            <div id="section_2">  
+
+                    <text><br><i>click on coloured equations for hints</i></text>
+
                     <div id="exp0">
                         <p> Torque , $ \tau=  r\times F $ </p>
                         <p>Torque from gravity , $$\tau_{g}=  L \times -mg = -mgLsin\theta$$</p>
                         <P>Torque from buoyant force , $$\tau_{b}=  L \times \rho _{f}Vg = \rho _{f}VgLsin\theta$$</P>
-    
                     </div>
+
                     <div id="exp1">
                         <p>for the pendulum,$$I = mL^{2} $$ </p>
                         <p> and $$\alpha = \frac{d^{2}\theta }{dt^{2}} ,\hskip 1em v = \frac{d\theta }{dt} $$</p>
                         <p> $$\Rightarrow mL^{2}\frac{d^{2}\theta }{dt^{2}} = -(mg_{e}Lsin\theta + a\frac{d\theta }{dt}L)$$</p>
-    
                     </div>
-                </div>
+                    
             </div>
 
         </div> 

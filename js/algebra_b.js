@@ -21,7 +21,7 @@ function xplain(i)
     docx.style.setProperty('--exp0',explan[0]);
     docx.style.setProperty('--exp1',explan[1]);
 }
-
+/*
 function drawArrow(x1, x2,string) 
 {   push();
     line(x1.x, x1.y, x2.x, x2.y); 
@@ -35,10 +35,10 @@ function drawArrow(x1, x2,string)
     pop();
 }
 
-  
+
 function draw()
 {
-  /***Create a canvas aka setup***/
+  //Create a canvas aka setup
   const wide = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   const tall = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
   p = wide*0.2;
@@ -48,7 +48,7 @@ function draw()
   frameRate(100);
   o = createVector(p/3,50);
 
-  /***Usual Draw function***/  
+  //Usual Draw function
   background(240,248,255);
   x = 75 + o.x;
   y = 150 + o.y;
@@ -94,3 +94,4 @@ function draw()
   drawArrow(v1,v2,'- av'); 
 
 }
+*/

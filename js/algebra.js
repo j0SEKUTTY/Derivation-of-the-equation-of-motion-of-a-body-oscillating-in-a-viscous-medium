@@ -45,13 +45,12 @@ function draw()
   p = wide*0.2;
   q = tall*0.6;
   var canvas =createCanvas(p,q);
-  canvas.parent('section_1');
+  canvas.parent('section_2');
   frameRate(100);
   o = createVector(p/3,50);
 
   /***Usual Draw function***/  
-  background(240,248,255);
- // background(255,255,255);
+  background(255,255,255);
   x = 75 + o.x;
   y = 150 + o.y;
   theta = atan(2);

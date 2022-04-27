@@ -1,5 +1,5 @@
 
-document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/swingingGirl.webp"></a><a class="thumbnail" href="idealisation.html"><img  src="images/pendulum.webp"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geometric.webp"></a><a class="thumbnail" href="algebra.html"><img  src="images/algebra.webp"></a>';
+document.getElementById('page_thumbnails_container').innerHTML = '<a class="thumbnail" href="reality.html"><img src="images/swingingGirl.webp"></a><a class="thumbnail" href="idealisation.html"><img  src="images/pendulum.webp"></a><a class="thumbnail" href="geometric_a.html"><img  src="images/geometric.webp"></a><a class="thumbnail" href="algebra.html"><img  src="images/equation.svg"></a>';
 
 document.getElementById('page_names').innerHTML ='<text>Reality</text><text>Idealization</text><text>Geometric</text><text>Algebra</text>';
 
@@ -9,13 +9,13 @@ document.getElementById('navigator').innerHTML='<a id="left" class="nav" ><img s
 
 const wide = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const tall = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-
 window.addEventListener('resize', trans);
 
 const docx = document.documentElement;
 function trans(){
     bt = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    ht = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
+    ht = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
     docx.style.setProperty('--dim1',Math.min(1,bt/wide));
     docx.style.setProperty('--dim2',Math.min(1,ht/tall));
 }
