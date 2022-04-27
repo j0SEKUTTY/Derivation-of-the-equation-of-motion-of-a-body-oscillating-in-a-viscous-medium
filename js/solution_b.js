@@ -1,6 +1,6 @@
 
 document.getElementById("left").href = "solution.html";
-document.getElementById("right").href = "k.html";
+document.getElementById("right").href = "overview.html";
 
 // *********************** PENDULUM PART************** //
 // volume of bob = 1
