@@ -15,7 +15,6 @@ acc = 0;
 w = 0 ;
 bob_r = 0.05;
 
-factor = 300;
 dt = 0.01;
 let x;
 let y;
@@ -56,21 +55,24 @@ function densityChanger(i){
 hist =[];
 t =0;
 
-function draw()
+
+//Create a canvas 
+function setup()
 {  
-  //Create a canvas aka setup//
-  const wide = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-  const tall = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-  factor = tall*.50;
-  p = wide*0.6; q = tall*0.95;
-  var canvas =createCanvas(p,q);
+  p = windowWidth;
+  q = windowHeight;
+  var canvas =createCanvas(p*0.6,q*0.95);
   canvas.parent('section_2');
   frameRate(100);
-  o = createVector(p/2,0);
- 
+}
 
-  //Usual Draw function//
+//Usual Draw function//
+function draw()
+{
+  o = createVector(p*0.3,0);
+  factor = windowHeight/2;
   background(255,255,250);
+
   f = -mass*gravity + density*gravity ;
   let torq = f*sin(theta)/length - c*w*length*length;
   acc = torq/mass;
@@ -139,10 +141,16 @@ function mouseDragged()
     }
 }
 
+function windowResized() {
+    p = windowWidth;
+    q = windowHeight;
+    resizeCanvas(p*0.6,q*0.95);
+  }
+
 function updateEq()
 {
-t1 = Math.round(theta*180/Math.PI);t2 = Math.round(theta0*180/Math.PI);t3 = Math.round(gravity*10)/10;t4 = Math.round(length*10)/10;
-t5 = Math.round(t*10)/10;t6 = Math.round(c*10)/10;t7 = mass;t8 = t5;
+t1 = Math.round(theta*180/Math.PI);t2 = Math.round(c*10)/10;t3 =  mass;t4 =  Math.round(t*10)/10;
+t5 = Math.round(theta0*180/Math.PI);t6 =  Math.round(gravity*10)/10; t7 = Math.round(length*10)/10; t8 = t4;
 
 document.getElementById('t1').innerHTML = t1;
 document.getElementById('t2').innerHTML = t2;
